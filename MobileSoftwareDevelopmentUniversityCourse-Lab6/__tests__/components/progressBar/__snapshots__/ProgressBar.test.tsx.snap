@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress Bar test case Progress Bar snapshot test 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "borderColor": "#AAA",
+      "borderRadius": 20,
+      "borderWidth": 3,
+      "height": 40,
+      "justifyContent": "center",
+      "padding": 3,
+    }
+  }
+>
+  <ForwardRef(AnimatedComponentWrapper)
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#24c8dd",
+          "borderRadius": 15,
+          "height": 30,
+        },
+        Object {
+          "width": "44%",
+        },
+      ]
+    }
+  />
+  <ForwardRef(AnimatedComponentWrapper)
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "black",
+        "fontSize": 19,
+        "position": "absolute",
+        "zIndex": 1,
+      }
+    }
+  >
+    44
+  </ForwardRef(AnimatedComponentWrapper)>
+</View>
+`;
