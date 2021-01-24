@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Button test case Header renders correctly 1`] = `
+<ScrollView
+  contentContainerStyle={
+    Object {
+      "backgroundColor": "transparent",
+    }
+  }
+  horizontal={true}
+  style={
+    Object {
+      "backgroundColor": "#256E7B",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "width": "100%",
+    }
+  }
+>
+  <StatusBar
+    animated={false}
+    hidden={true}
+    showHideTransition="fade"
+  />
+  <Component
+    key="View1"
+    onClickHandler={[Function]}
+    routeDir="View1"
+    title="View1"
+  />
+  <Component
+    key="View2"
+    onClickHandler={[Function]}
+    routeDir="View2"
+    title="View2"
+  />
+  <Component
+    key="View3"
+    onClickHandler={[Function]}
+    routeDir="View3"
+    title="View3"
+  />
+</ScrollView>
+`;

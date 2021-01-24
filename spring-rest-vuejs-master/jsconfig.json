@@ -1,0 +1,22 @@
+{
+  "allowJs": true,
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    // "checkJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "/frontend/src/*"
+      ]
+    }
+  },
+  "include": [
+    "frontend/src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}

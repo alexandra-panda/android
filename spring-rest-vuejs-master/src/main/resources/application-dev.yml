@@ -1,0 +1,34 @@
+
+debug: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/app_db
+    username: postgres
+    password: qwerty
+  jpa:
+    generate-ddl: true
+    show-sql: true
+  session:
+    jdbc:
+      table-name: SPRING_SESSION
+      schema: classpath:session_tables.sql
+security:
+  oauth2:
+    client:
+      clientId: ${GOOGLE_OAUTH_CLIENT_ID}
+      clientSecret: ${GOOGLE_OAUTH_SERCET}
+      clientAuthenticationScheme: form
+      scope: openid,email,profile
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+      preferTokenInfo: true
+
+
+  server:
+    port: 8080
+  hostname: 127.0.0.1:${server.port}
+
+
